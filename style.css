@@ -35,10 +35,13 @@ h4 {
 }
 
 .navbar .logo img {
+  width: 25%;
+  margin-top: 0.6rem;
+  padding-left: 4rem;
+}
+#gdsccitk {
   width: 100px;
   height: 100px;
-  padding-left: 10px;
-  border-radius: 30;
 }
 
 /* Google Cloud Study Jam's name */
