@@ -7,6 +7,15 @@ function compare(a, b) {
   }
   return 0;
 }
+function compareGen(a, b) {
+  if (a["# of GenAI Game Completed"] > b["# of GenAI Game Completed"]) {
+    return -1;
+  }
+  if (a["# of GenAI Game Completed"] < b["# of GenAI Game Completed"]) {
+    return 1;
+  }
+  return 0;
+}
 
 const updateData = async (filter) => {
   let data = await (await fetch("./data.json")).json();
@@ -17,6 +26,7 @@ const updateData = async (filter) => {
     });
   }
   data.sort(compare);
+  data.sort(compareGen);
   let total_reg = data.length;
   let html = "";
   data.forEach((d, i) => {
