@@ -39,7 +39,7 @@ const updateData = async (filter) => {
       d["Student Name"]
     }</a></td>
                         <td>${
-                          d["Redemption Status"] === "Yes" ? "✅" : "⚠️"
+                          d["Redemption Status"] === "Yes" ? "⚠️" : "✅"
                         }</td>
                         <td>${d["# of Courses Completed"]}</td>
                         <td>${d["# of Skill Badges Completed"]}</td>
